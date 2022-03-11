@@ -1,13 +1,47 @@
 /* These styles are just to make it easier to see the blocks, initially. */
+/* add breakout points */
+/* want to control some thing have same value, commond d selected */
 
 body {
 	font-family: monospace;
 	padding: 40px;
+	font-family:helvetica, sans-serif;
+}
+header{
+
+background-color:lightblue;
+position: fixed;
+width:100%;
+top:0;
+left:0;
+padding:20px;
+
+}
+h1{
+font-size:200%;
+
+
 }
 
-a {
-	color: royalblue;
+.two-column{
+ display:flex;
+ gap:100px;
+
+
 }
+/* section{
+	margin-top:50px;
+} */
+
+a {
+	color: tomato;
+}
+
+/* space between each elements */
+figure:not(:first-child){
+    margin-top: 100px;
+
+	}
 
 h1, h2, h3 {
 	font-size: 200%;
@@ -16,8 +50,18 @@ h1, h2, h3 {
 section,
 figure {
 	margin-top: 80px;
-	max-width: 600px;
+
 }
+/*  */
+/* @media (min-width:768px) {
+	.two-column{
+		gap:60px;
+	}
+	.two-column section{
+
+	}
+} */
+
 
 #channel-description > *,
 figure > *:not(:first-child),
