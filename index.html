@@ -7,6 +7,12 @@
 		<link href="assets/style.css" rel="stylesheet">
 		<script src="assets/arena.js"></script>
 		<link href="assets/favicon.png" rel="icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 	</head>
 	<body>
 
@@ -17,20 +23,24 @@
 			</a>
 			<div id="channel-description"></div> <!-- Same here for the channel description. -->
 			<!-- add link to another page -->
-			<a href="text.html">text blocks</a>
+			<a href="text.html"></a>
+			<div class="line01"></div>
   </header>
+
 
 
 		<!-- All the channel “blocks” will be created as children, here. -->
 		<!-- You could move the classes to different section elements to separate the types! -->
 		<!-- tell it put all things in one container -->
-		<div class="two-column">
+		<div class="three-column">
 		<!-- <section class="audio-embed-blocks audio-file-blocks  embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"> -->
 			<section class="link-blocks">
-			<h2>Blocks</h2>
+			<h2></h2>
 		</section>
 		<section class="image-blocks">
 		</section>
+		<!-- <section class="embed-blocks">
+		</section> -->
 
 	</div>
 
@@ -68,8 +78,9 @@
 
 		<template id="image-block">
 			<figure class="image-block">
-				<h3 class="title"></h3>
+
 				<img class="image">
+				<h3 class="title"></h3>
 				<a class="link">
 					<p class="link-title"></p>
 				</a>
@@ -80,8 +91,9 @@
 
 		<template id="link-block">
 			<figure class="link-block">
-				<h3 class="title"></h3>
+
 				<img class="image">
+				<h3 class="title"></h3>
 				<a class="link">
 					<p class="link-title"></p>
 				</a>

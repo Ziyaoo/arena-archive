@@ -2,39 +2,112 @@
 /* add breakout points */
 /* want to control some thing have same value, commond d selected */
 
+
+/* local Fonts */
+
+
+@font-face {
+    font-family: ordinary;
+    src:url("fonts/ordinary-textlight.otf");
+}
+
+
+
 body {
-	font-family: monospace;
+	font-family: 'Pathway gothic one',sans-serif;
 	padding: 40px;
-	font-family:helvetica, sans-serif;
+  font-size: 16px;
+  color:white;
+  background-color: black;
+
 }
 header{
+  background: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
+  /* background: linear-gradient(to bottom, rgba(0,84,144,1),rgba(0,0,0,0)); */
 
-background-color:lightblue;
+/* background-color:black; */
 position: fixed;
 width:100%;
+/* height:180px; */
 top:0;
 left:0;
-padding:20px;
+padding:0px;
 
 }
+
+
+.line01{
+
+/* top:180px; */
+width:100%;
+height:1px;
+background-color: white;
+}
+
 h1{
-font-size:200%;
-
+font-family: 'Cardo',serif;
+font-size:600%;
+text-align: left;
+color:white;
 
 }
 
-.two-column{
+h1:hover + #channel-description{
+  color: rgba(255, 255, 255, 1);
+}
+
+#channel-description{
+  font-family: 'Cardo',serif;
+  font-size:16px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0);
+  height:26px;
+  /* display:none; */
+
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size:400%;}
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size:250%;}
+}
+@media (max-width: 1200px) {
+  header {
+    height:120px}
+}
+
+@media (max-width: 780px) {
+  header {
+    height:60px}
+}
+
+/* @media (max-width: 1000px) {
+  h1 {
+    font-size:300%;}
+} */
+
+.title{
+font-family: 'Cardo',serif;
+font-size:20px;
+
+}
+
+/* .three-column{
  display:flex;
- gap:100px;
+ gap:60px;
 
 
-}
+} */
 /* section{
 	margin-top:50px;
 } */
 
 a {
-	color: tomato;
+	color: white;
 }
 
 /* space between each elements */
@@ -43,24 +116,29 @@ figure:not(:first-child){
 
 	}
 
-h1, h2, h3 {
-	font-size: 200%;
+/* h1, h2, h3 {
+	font-size: 300%;
+} */
+
+section{
+  display:flex;
+	margin-top: 80px;
+  width:300%;
+  gap:20px;
+
 }
 
-section,
+/* section,
 figure {
+  display:flex;
 	margin-top: 80px;
 
-}
-/*  */
-/* @media (min-width:768px) {
-	.two-column{
-		gap:60px;
-	}
-	.two-column section{
 
-	}
 } */
+
+
+
+
 
 
 #channel-description > *,
